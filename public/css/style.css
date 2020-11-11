@@ -1,0 +1,12 @@
+body {
+  background: beige;
+}
+
+p {
+  margin: 10px 0 !important;
+}
+
+.card {
+  margin-top: 6rem;
+  text-align: center;
+}
