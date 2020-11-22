@@ -8,7 +8,9 @@ CREATE TABLE users (
 
 CREATE TABLE coffeelog (
   log_id SERIAL PRIMARY KEY,
-  description VARCHAR(255)
+  log_num VARCHAR(31),
+  author VARCHAR(2047),
+  description VARCHAR(255),
   created_at TIMESTAMP NOT NULL DEFAULT NOW(),
   updated_at TIMESTAMP NOT NULL DEFAULT NOW()
 );

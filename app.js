@@ -23,6 +23,8 @@ if (process.env.NODE_ENV === 'development') {
 
 app.engine('.hbs', exphbs({
   defaultLayout: 'main',
+  layoutsDir: path.join(__dirname, 'views/layouts'),
+  partialsDir: path.join(__dirname, 'views/partials'),
   extname: '.hbs'
 }))
 app.set('view engine', '.hbs')
@@ -47,6 +49,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/', require('./routes/index'))
 app.use('/auth', require('./routes/auth'))
+app.use('/entries', require('./routes/coffee'))
 
 const PORT = process.env.PORT || 3000
 

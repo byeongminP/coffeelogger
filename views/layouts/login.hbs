@@ -13,23 +13,10 @@
 </head>
 
 <body>
-  {{>sidenav}}
-  <main>
-    <div class="container">
-      <div class="title">
-        <h1>{{title}}</h1>
-      </div>
-      {{{body}}}
-    </div>
-  </main>
+  <div class="container">
+    {{{body}}}
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var elems = document.querySelectorAll('textarea, #coffee_name, #coffee_roaster');
-      var instances = M.CharacterCounter.init(elems);
-    })
-    M.AutoInit();
-  </script>
 </body>
 
 </html>

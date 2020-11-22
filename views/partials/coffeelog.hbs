@@ -1,0 +1,19 @@
+<table class="highlight">
+  <thead>
+    <tr>
+      <td>Entry</td>
+      <td>Description</td>
+      <td>Date</td>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each entries}}
+    <tr>
+      <td>{{log_num}}</td>
+      <td>{{description}}</td>
+      <td>{{created_at}}</td>
+    </tr>
+    {{else}}
+    {{/each}}
+  </tbody>
+</table>

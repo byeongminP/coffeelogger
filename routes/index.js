@@ -3,11 +3,16 @@ const router = express.Router()
 const { ensureAuth, ensureGuest } = require('../middleware/auth')
 
 router.get('/', ensureGuest, (req, res) => {
-  res.render('Login')
+	res.render('login', {
+    layout: 'login'
+  })
 })
 
 router.get('/dashboard', ensureAuth, (req, res) => {
-  res.json(req.user)
+	res.render('dashboard', {
+    title: 'Dashboard',
+    user: req.user
+  })
 })
 
 module.exports = router

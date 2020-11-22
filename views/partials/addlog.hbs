@@ -1,0 +1,87 @@
+<div class="row">
+  <form method="POST" action="/entries" class="col s12">
+    <h3 class="center">Coffee</h3>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="coffee_name" name="coffee_name" type="text" class="validate" data-length="63">
+        <label for="coffee_name">Coffee Origin/Name</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s8">
+        <input id="coffee_roaster" name="coffee_roaster" type="text" class="validate" data-length="63">
+        <label for="coffee_roaster">Roaster</label>
+      </div>
+      <div class="input-field col s4">
+        <input id="coffee_date" name="coffee_date" type="text" class="validate datepicker">
+        <label for="coffee_date">Roast Date</label>
+      </div>
+    </div>
+    <h3 class="center">Brew</h3>
+    <div class="row">
+      <div class="input-field col s4">
+        <select name="brew_method">
+          <option value="0" disabled selected>Choose...</option>
+          <option value="1">Cupping</option>
+          <option value="2">Drip</option>
+          <option value="3">Espresso</option>
+          <option value="4">Pour-over</option>
+          <option value="5">Press</option>
+          <option value="6">Siphon</option>
+          <option value="7">Other</option>
+        </select>
+        <label>Brew Method</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s4">
+        <input id="brew_grind" name="brew_grind" type="number" class="validate">
+        <label for="brew_grind">Grind Size</label>
+      </div>
+      <div class="input-field col s4">
+        <input id="brew_dose" name="brew_dose" type="number" class="validate">
+        <label for="brew_dose">Dose (Coffee In)</label>
+      </div>
+      <div class="input-field col s4">
+        <input id="brew_yield" name="brew_yield" type="number" class="validate">
+        <label for="brew_yield">Yield (Total Weight)</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="brew_temp" name="brew_temp" type="number" class="validate">
+        <label for="brew_temp">Brew Temperature</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="brew_time" name="brew_time" type="text" class="validate">
+        <label for="brew_time">Elapsed Time</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <textarea id="description" name="description" class="materialize-textarea" data-length="255"></textarea>
+        <label for="description">Description</label>
+      </div>
+    </div>
+    <h3 class="center">Evaluation</h3>
+    <div class="row">
+      <div class="col s6">
+        <label>Overall Score (10 for Great, 0 for Not So Great)</label>
+        <p class="range-field">
+          <input type="range" id="taste" min="0" max="10" />
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <textarea id="comments" name="comments" class="materialize-textarea" data-length="255"></textarea>
+        <label for="comments">Comments</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 center">
+        <button class="btn waves-effect waves-light" type="submit">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>

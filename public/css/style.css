@@ -1,5 +1,67 @@
-body {
-  background: beige;
+/* title */
+main .title h1 {
+  font-weight: 500;
+}
+
+/* sidenav */
+nav.top-nav {
+  height: 4.5rem;
+  box-shadow: none;
+  border-bottom: 1px solid rgba(0,0,0,0.14);
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+nav .nav-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.header {
+  color: black;
+  font-weight: 300;
+}
+
+a.sidenav-trigger.top-nav {
+  position: absolute;
+  text-align: center;
+  height: 1.5rem;
+  width: 1.5rem;
+  top: 0.5rem;
+  float: none;
+  color: black;
+  z-index: 2;
+}
+
+ul.sidenav.sidenav-fixed {
+  overflow: hidden;
+  box-shadow: none;
+  border-right: 1px solid rgba(0,0,0,0.14);
+}
+
+ul.sidenav.sidenav-fixed .brand-logo {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+ul.sidenav.sidenav-fixed .circle {
+  height: 3rem;
+  width: 3rem;
+}
+
+ul.sidenav.sidenav-fixed .name {
+  font-weight: 700;
+}
+
+#logo-container {
+  height: 3.5rem;
+}
+
+#profile-container {
+  padding: 1.25rem 1.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+  line-height: 1.5rem;
 }
 
 p {
@@ -8,5 +70,18 @@ p {
 
 .card {
   margin-top: 6rem;
-  text-align: center;
+}
+
+.fa-coffee {
+  margin-top: 0.125rem;
+}
+
+@media only screen and (min-width: 993px) {
+  header {
+    padding-left: 300px;
+  }
+
+  main {
+    padding-left: 300px;
+  }
 }
