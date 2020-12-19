@@ -1,19 +1,22 @@
 <table class="highlight">
   <thead>
     <tr>
-      <td>Entry</td>
-      <td>Description</td>
-      <td>Date</td>
+      <th>Brew Date</th>
+      <th>Coffee Origin/Name</th>
+      <th>Score</th>
     </tr>
   </thead>
   <tbody>
     {{#each entries}}
     <tr>
-      <td>{{log_num}}</td>
-      <td>{{description}}</td>
-      <td>{{created_at}}</td>
+      <td>{{brew_date}}</td>
+      <td>{{coffee_name}}</td>
+      <td>{{taste}}</td>
     </tr>
     {{else}}
+    <tr>
+      <td colspan=3 style="text-align: center;">No entries yet... Click the "+" button to start logging.</td>
+    </tr>
     {{/each}}
   </tbody>
 </table>

@@ -25,7 +25,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      var elems = document.querySelectorAll('textarea, #coffee_name, #coffee_roaster');
+      var elems = document.querySelectorAll('textarea, #coffee_name');
+      var instances = M.CharacterCounter.init(elems);
+    })
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('textarea, #coffee_roaster');
       var instances = M.CharacterCounter.init(elems);
     })
     M.AutoInit();

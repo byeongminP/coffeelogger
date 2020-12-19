@@ -19,7 +19,7 @@
     </div>
     <h3 class="center">Brew</h3>
     <div class="row">
-      <div class="input-field col s4">
+      <div class="input-field col s8">
         <select name="brew_method">
           <option value="0" disabled selected>Choose...</option>
           <option value="1">Cupping</option>
@@ -31,6 +31,10 @@
           <option value="7">Other</option>
         </select>
         <label>Brew Method</label>
+      </div>
+      <div class="input-field col s4">
+        <input id="brew_date" name="brew_date" type="text" class="validate datepicker">
+        <label for="brew_date">Brew Date</label>
       </div>
     </div>
     <div class="row">
@@ -68,7 +72,7 @@
       <div class="col s6">
         <label>Overall Score (10 for Great, 0 for Not So Great)</label>
         <p class="range-field">
-          <input type="range" id="taste" min="0" max="10" />
+          <input type="range" name="taste" id="taste" min="0" max="100" />
         </p>
       </div>
     </div>
